@@ -4,7 +4,6 @@ from PIL import Image
 import numpy as np
 st.set_page_config(page_title="Hand Alphabet Clasifier" ,page_icon= "🔤")
 st.title("Hand Alphabet Clasifier 🤞🏻✌🏻🔤")
-st.header("fresh vs rotten ")
 
 model = tf.keras.models.load_model('hamodel2.h5')
 
@@ -30,3 +29,4 @@ if upload_image is not None :
     btn = st.button("Print Result")
     if btn :
         st.success(class_list[class_index])
+
